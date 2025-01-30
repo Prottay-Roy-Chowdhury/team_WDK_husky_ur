@@ -15,7 +15,7 @@ def joint_names() -> List[str]:
 
 
 def base_link_name(prefix: str = "ur_") -> str:
-    return "base_link"
+    return "ur_base_link"
 
 
 def end_effector_name(prefix: str = "ur_") -> str:
