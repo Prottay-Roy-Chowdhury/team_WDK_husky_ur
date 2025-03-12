@@ -117,14 +117,14 @@
         <!-- ur_plate link -->
         <link name="ur_base_link">
           <visual>
-            <origin xyz="-0.3 0 -0.07" rpy="0 0 0" />
+            <origin xyz="-0.2 0 -0.07" rpy="0 0 0" />
             <geometry>
               <mesh filename="package://clearpath_platform_description/meshes/a200/attachments/husky_frame_vi.stl" />
             </geometry>
             <material name="silver" />
           </visual>
           <collision>
-            <origin xyz="-0.3 0 -0.07" rpy="0 0 0"/>
+            <origin xyz="-0.2 0 -0.07" rpy="0 0 0"/>
             <geometry>
               <mesh filename="package://clearpath_platform_description/meshes/a200/attachments/husky_frame_co.stl" />
             </geometry>
@@ -133,7 +133,7 @@
         <joint name="ur_plate" type="fixed">
           <parent link="${name}_default_mount" />
           <child link="ur_base_link"/>
-          <origin xyz="0.3 0 0.07" rpy="0 0 0"/>
+          <origin xyz="0.2 0 0.07" rpy="0 0 0"/>
         </joint>
       </xacro:if>
 
