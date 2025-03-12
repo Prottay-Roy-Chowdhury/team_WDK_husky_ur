@@ -9,7 +9,7 @@ def generate_launch_description():
     declared_arguments = [
         DeclareLaunchArgument(
             "type",
-            default_value="husky_manipulator",
+            default_value="husky_basic",
             choices=["husky_basic", "husky_manipulator", "husky_ur"],
             description="Specify the robot model to be launched (e.g., 'husky_basic', 'husky_manipulator', 'husky_ur')",
         ),
