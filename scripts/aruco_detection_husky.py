@@ -57,7 +57,7 @@ class ArucoDetector(Node):
                 cv2.putText(frame, f"{distance:.2f}m", center, cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
                 
             min_distance = min(distances)
-            if min_distance <= 0.30:
+            if min_distance <= 0.33:
                 self.get_logger().info("STOP!!!")
                 self.publish_status("STOP")
             else:
